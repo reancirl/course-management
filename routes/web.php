@@ -3,7 +3,6 @@
 use App\Http\Middleware\EnsurePasswordIsUpdated;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PaymentController;
-// use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -28,8 +27,11 @@ Route::middleware([
         Route::get('/dashboard', function () {
             return Inertia::render('Dashboard');
         })->name('dashboard');
+        
+        Route::get('/transactions/{courseId?}', [PaymentController::class, 'index'])->name('payment.index');
+
+        Route::get('/{category}', [CourseController::class, 'index'])->name('courses.index');
+        
     });
 
-    Route::get('/{category}', [CourseController::class, 'index'])->name('courses.index');
-    Route::get('/transactions', [PaymentController::class, 'transactions'])->name('transactions');
 });

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Payment;
+use Inertia\Inertia;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
@@ -10,10 +12,20 @@ class PaymentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request, $courseId = null)
     {
-        //
+        // Get the selected course if courseId is provided
+        $selectedCourse = $courseId ? Course::find($courseId) : Course::find(5);
+
+        // Get all courses for the dropdown
+        $courses = Course::where('is_free',false)->get();
+
+        return Inertia::render('Transaction', [
+            'selectedCourse' => $selectedCourse,
+            'courses' => $courses,
+        ]);
     }
+
 
     /**
      * Show the form for creating a new resource.

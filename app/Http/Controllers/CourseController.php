@@ -17,15 +17,15 @@ class CourseController extends Controller
         $categories = [
             'learning' => [
                 'id' => 2,
-                'view' => 'Category',
+                'view' => 'Course',
             ],
             'business-and-templates' => [
                 'id' => 3,
-                'view' => 'Category',
+                'view' => 'Course',
             ],
             'freebies' => [
                 'id' => 1,
-                'view' => 'Category',
+                'view' => 'Course',
             ],
         ];
 

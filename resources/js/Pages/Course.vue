@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import AppLayout from "@/Layouts/AppLayout.vue";
+import { Link } from '@inertiajs/vue3';
 
 // Define props for the courses array and a title for the page
 defineProps({
@@ -61,14 +62,13 @@ const defaultImg = "/images/elevate_logo.webp";
                     </a>
 
                     <div v-else>
-                      <button
-                        @click="
-                          () => alert('Buy this course feature coming soon!')
-                        "
+                      <Link
+                        :href="route('payment.index', { courseId: course.id })"
                         class="block w-full px-4 py-2 text-center bg-green-600 text-white rounded hover:bg-green-700 mb-2"
                       >
                         Buy this Course
-                      </button>
+                      </Link>
+
                       <a
                         href="#"
                         class="block px-4 py-2 text-center bg-gray-600 text-white rounded hover:bg-gray-700"

@@ -75,11 +75,11 @@ const logout = () => {
                 </NavLink>
 
                 <NavLink
-                  :href="route('transactions')"
-                  :active="route().current('transactions')"
+                  :href="route('payment.index')"
+                  :active="route().current('payment.index')"
                 >
                   Transactions
-                </NavLink>v
+                </NavLink>
               </div>
             </div>
 
@@ -325,8 +325,8 @@ const logout = () => {
             </ResponsiveNavLink>
 
             <ResponsiveNavLink
-              :href="route('transactions')"
-              :active="route().current('transactions')"
+              :href="route('payment.index')"
+              :active="route().current('payment.index')"
             >
               Transactions
             </ResponsiveNavLink>
