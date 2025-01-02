@@ -23,6 +23,6 @@ class Course extends Model
 
     public function payments()
     {
-        return $this->belongsToMany(Payment::class, 'course_payment');
+        return $this->belongsToMany(Payment::class, 'course_payments');
     }
 }

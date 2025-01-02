@@ -28,6 +28,7 @@ Route::middleware([
             return Inertia::render('Dashboard');
         })->name('dashboard');
         
+        Route::post('/transactions', [PaymentController::class, 'store'])->name('payment.store');
         Route::get('/transactions/{courseId?}', [PaymentController::class, 'index'])->name('payment.index');
 
         Route::get('/{category}', [CourseController::class, 'index'])->name('courses.index');

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('img')->nullable();
             $table->unsignedBigInteger('course_category_id'); 
             $table->longText('gdrive_link');
+            $table->longText('gdrive_sample_link')->nullable();
             $table->boolean('is_free')->default(false);
             $table->decimal('price', 8, 2); 
             $table->timestamps();

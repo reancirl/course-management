@@ -29,6 +29,9 @@ const toggleModal = () => {
 
       <ol class="list-decimal pl-6 text-gray-700">
         <li>
+          Select a Course
+        </li>
+        <li>
           Scan the QR code using the GCash app or send the amount to the phone
           number
           <button
@@ -52,7 +55,7 @@ const toggleModal = () => {
         <li>
           Submit your screenshot and reference number on
           <Link
-            :href="route('dashboard')"
+            :href="route('payment.index')"
             class="text-blue-600 underline hover:text-blue-800"
           >
             this page

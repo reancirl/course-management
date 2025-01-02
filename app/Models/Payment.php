@@ -19,6 +19,6 @@ class Payment extends Model
 
     public function courses()
     {
-        return $this->belongsToMany(Course::class, 'course_payment');
+        return $this->belongsToMany(Course::class, 'course_payments');
     }
 }

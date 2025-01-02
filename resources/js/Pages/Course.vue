@@ -71,6 +71,7 @@ const defaultImg = "/images/elevate_logo.webp";
 
                       <a
                         href="#"
+                        target="_blank"
                         class="block px-4 py-2 text-center bg-gray-600 text-white rounded hover:bg-gray-700"
                       >
                         View Resource Snippets

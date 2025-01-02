@@ -39,7 +39,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'A collection of cartoon resources.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 1, // Freebies
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/10F3wtt7CtFwyWlU4YQIF8V8oxTbwZ5aD?usp=sharing',
                 'is_free' => true,
                 'price' => 0.00,
             ],
@@ -48,7 +48,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Coffee resource.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 1, // Freebies
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1-D_xiXJv2MIxsgBV3fQSzJGrOTMll3Ql?usp=sharing',
                 'is_free' => true,
                 'price' => 0.00,
             ],
@@ -57,7 +57,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Digital products collection.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 1, // Freebies
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1X-JFSHBepxJZK47YOetivkjYsEwg4-4H?usp=sharing',
                 'is_free' => true,
                 'price' => 0.00,
             ],
@@ -66,7 +66,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Learn about ChatGPT.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 2, // Learning
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1ZFMGFbjyzgRl5p-lMMJegNl0xzkjuwpt?usp=sharing',
                 'is_free' => false,
                 'price' => 99.00,
             ],
@@ -75,7 +75,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Automotive learning resources.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 2, // Learning
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1nxyM1GADvTrm-q0N9ZBlCrjwmoVxDvvk?usp=sharing',
                 'is_free' => false,
                 'price' => 99.99,
             ],
@@ -84,7 +84,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Programming tutorials and resources.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 2, // Learning
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1EdDtGoFXG7ZYMcqW80L4BWMqdFJxbggU?usp=sharing',
                 'is_free' => false,
                 'price' => 99.99,
             ],
@@ -93,7 +93,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Powerpoint templates for business.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 3, // Business & Templates
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1Su7POcnX47Bnh43-kRnm7NY2ZcbEhKd8?usp=sharing',
                 'is_free' => false,
                 'price' => 99.99,
             ],
@@ -102,7 +102,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'Sales and inventory templates.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 3, // Business & Templates
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1YYdzYH-5ThApQY7xD0OokSaCfd6RT5R8?usp=sharing',
                 'is_free' => false,
                 'price' => 99.99,
             ],
@@ -111,7 +111,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'description' => 'DIY business guides.',
                 'img' => $defaultImagePath,
                 'course_category_id' => 3, // Business & Templates
-                'gdrive_link' => '',
+                'gdrive_link' => 'https://drive.google.com/drive/folders/1VPBFjJ2NiS6hmASV60vn2JhQ-iojjgnj?usp=sharing',
                 'is_free' => false,
                 'price' => 99.99,
             ],
