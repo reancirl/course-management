@@ -42,6 +42,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'gdrive_link' => 'https://drive.google.com/drive/folders/10F3wtt7CtFwyWlU4YQIF8V8oxTbwZ5aD?usp=sharing',
                 'is_free' => true,
                 'price' => 0.00,
+                'active' => false
             ],
             [
                 'name' => 'Coffee',
@@ -60,6 +61,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1X-JFSHBepxJZK47YOetivkjYsEwg4-4H?usp=sharing',
                 'is_free' => true,
                 'price' => 0.00,
+                'active' => false
             ],
             [
                 'name' => 'ChatGPT',
@@ -67,6 +69,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'img' => $defaultImagePath,
                 'course_category_id' => 2, // Learning
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1ZFMGFbjyzgRl5p-lMMJegNl0xzkjuwpt?usp=sharing',
+                'gdrive_sample_link' => '',
                 'is_free' => false,
                 'price' => 99.00,
             ],
@@ -77,7 +80,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'course_category_id' => 2, // Learning
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1nxyM1GADvTrm-q0N9ZBlCrjwmoVxDvvk?usp=sharing',
                 'is_free' => false,
-                'price' => 99.99,
+                'price' => 99.00,
             ],
             [
                 'name' => 'Programming',
@@ -86,7 +89,8 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'course_category_id' => 2, // Learning
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1EdDtGoFXG7ZYMcqW80L4BWMqdFJxbggU?usp=sharing',
                 'is_free' => false,
-                'price' => 99.99,
+                'price' => 99.00,
+                'active' => false
             ],
             [
                 'name' => 'Powerpoint Templates',
@@ -95,7 +99,8 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'course_category_id' => 3, // Business & Templates
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1Su7POcnX47Bnh43-kRnm7NY2ZcbEhKd8?usp=sharing',
                 'is_free' => false,
-                'price' => 99.99,
+                'price' => 99.00,
+                'active' => false
             ],
             [
                 'name' => 'Sales & Inventory',
@@ -113,7 +118,7 @@ class CoursesAndCategoriesSeeder extends Seeder
                 'course_category_id' => 3, // Business & Templates
                 'gdrive_link' => 'https://drive.google.com/drive/folders/1VPBFjJ2NiS6hmASV60vn2JhQ-iojjgnj?usp=sharing',
                 'is_free' => false,
-                'price' => 99.99,
+                'price' => 99.00,
             ],
         ];
 

@@ -33,7 +33,10 @@ class CourseController extends Controller
             abort(404, 'Category not found.');
         }
 
-        $courses = Course::where('course_category_id', $categories[$category]['id'])->get();
+        $courses = Course::where('course_category_id', $categories[$category]['id'])
+                         ->where('active',true)
+                         ->orderBy('id', 'desc')
+                         ->get();
 
         // Fetch the IDs of courses the user has already bought
         $userBoughtCourses = auth()->user()
